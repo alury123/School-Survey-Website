@@ -1,0 +1,1726 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: rgb(235, 205, 205);
+
+            background-size: 400px;
+            background-repeat: no-repeat
+        }
+
+        label.radio {
+            cursor: pointer
+        }
+
+        label.radio input {
+            position: absolute;
+            top: 0;
+            left: 0;
+            visibility: hidden;
+            pointer-events: none
+        }
+
+        label.radio span {
+            padding: 4px 0px;
+            border: 1px solid red;
+            display: inline-block;
+            color: red;
+            width: 50px;
+            text-align: center;
+            border-radius: 3px;
+            margin-top: 7px;
+            text-transform: uppercase
+
+        }
+
+        label.radio input:checked + span {
+            border-color: rgb(3, 226, 255);
+            background-color: rgb(3, 171, 248);
+            color: #fff
+        }
+
+        .ans {
+            margin-left: 36px !important
+        }
+
+        .btn:focus {
+            outline: 0 !important;
+            box-shadow: none !important
+        }
+
+        .btn:active {
+            outline: 0 !important;
+            box-shadow: none !important
+        }
+
+        h5 {
+            color: rgb(194, 2, 2);
+        }
+
+        .image {
+            margin-bottom: 170px;
+            height: 400px;
+            width: 400px;
+
+        }
+
+        #about{
+            background-color: rgb(15, 171, 139);
+            color: #fff;
+    
+        }
+
+        #about h2{
+            font-size: 4.8rem;
+            margin-bottom: 50px;
+            
+        }
+
+        #about-text{
+            text-align: center;
+        }
+
+        #about-text .left{
+            float: none;
+            width: 100%;
+            padding-right: 5px;
+            padding-left: 25px;
+        }
+
+        #about-text .right{
+            float: none;
+            width: 100%;
+            padding-right: 5px;
+            padding-left: 25px;
+        }
+
+        #about-text .text{
+            font-size: 5rem;
+            
+        }
+
+        .btn-new{
+        display:inline-block;
+        border-radius: 20px;
+        background: rgba(183, 9, 9, 0.585);
+        color: #fff;
+        margin-top: 30px;
+        padding: 1.6rem 3.2rem;
+        transition: all 0.3; /* Butonun üstüne gelince yavaşca renk değişmesi */
+}
+    </style>
+
+</head>
+
+<body>
+
+<form action="" id="test">
+    <div class="mt-5">
+
+        <div class="row col-md-12">
+            <div class="col-md-3">
+                <img class="image" src="Resim/purple 1.png" alt="">
+                <img class="image" src="Resim/blue 3.png" alt="">
+                <img class="image" src="Resim/yellow 1.png" alt="">
+                <img class="image" src="Resim/purple 2.png" alt="">
+                <img class="image" src="Resim/green 1.png" alt="">
+                <img class="image" src="Resim/green 5.png" alt="">
+                <img class="image" src="Resim/blue 2.png" alt="">
+                <img class="image" src="Resim/purple 3.png" alt="">
+                <img class="image" src="Resim/blue 3.png" alt="">
+                <img class="image" src="Resim/green 4.png" alt="">
+                <img class="image" src="Resim/green 7.png" alt="">
+                <img class="image" src="Resim/purple 6.png" alt="">
+                <img class="image" src="Resim/blue 4.png" alt="">
+                <img class="image" src="Resim/purple 5.png" alt="">
+                <img class="image" src="Resim/yellow 2.png" alt="">
+                <img class="image" src="Resim/yellow 8.png" alt="">
+            </div>
+            <div class="col-md-6">
+                <div class="border">
+                    <div class="question bg-white p-3 border-bottom">
+                        <div class="d-flex flex-row justify-content-between align-items-center mcq">
+
+                            <h4 class="mx-auto">PART1: Which answer comes closer to telling how you usually
+                                feel or act?</h4>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q1.</h3>
+                            <h5 class="mt-1 ml-2">WHEN YOU GO SOMEWHERE FOR THE DAY, WOULD YOU RATHER</h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="one" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>PLAN WHAT YOU WILL DO AND WHEN, OR</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="one" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>JUST GO!!</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q2.</h3>
+                            <h5 class="mt-1 ml-2">IF YOU WERE A TEACHER, WOULD YOU RATHER TEACH</h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="two" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>FACTS-BASED COURSES, OR</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="two" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>COURSES INVOLVING OPINION OR THEORY?</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q3.</h3>
+                            <h5 class="mt-1 ml-2">ARE YOU USUALLY</h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="three" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>A “GOOD MIXER” WITH GROUPS OF PEOPLE, OR</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="three" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>RATHER QUIET AND RESERVED?</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-white p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q4.</h3>
+                            <h5 class="mt-1 ml-2">DO YOU MORE OFTEN LET</h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="four" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>YOUR HEART RULE YOUR HEAD. OR</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="four" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>YOUR HEAD RULE YOUR HEART?</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q5.</h3>
+                            <h5 class="mt-1 ml-2">IN DOING SOMETHING THAT MANY OTHER PEOPLE DO, WOULD YOU
+                                RATHER</h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="five" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>INVENT A WAY OF YOUR OWN, OR</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="five" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>DO IT IN THE ACCEPTED WAY?</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q6.</h3>
+                            <h5 class="mt-1 ml-2">AMONG YOUR FRIENDS ARE YOU</h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="six" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>FULL OF NEWS ABOUT EVERYBODY, OR</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="six" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>ONE OF THE LAST TO HEAR WHAT IS GOING ON?</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q7.</h3>
+                            <h5 class="mt-1 ml-2">DOES THE IDEA OF MAKING A LIST OF WHAT YOU SHOULD GET DONE
+                                OVER A WEEKEND</h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="seven" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>HELP YOU, OR</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="seven" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>STRESS YOU, OR</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="seven" value="C" autocomplete="off">
+                                <span>C</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>POSITIVELY DEPRESS YOU?</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q8.</h3>
+                            <h5 class="mt-1 ml-2">WHEN YOU HAVE A SPECIAL JOB TO DO, DO YOU LIKE TO</h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="eight" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>ORGANIZE IT CAREFULLY BEFORE YOU START, OR</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="eight" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>FIND OUT WHAT IS NECESSARY AS YOU GO ALONG?</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q9.</h3>
+                            <h5 class="mt-1 ml-2">DO YOU TEND TO HAVE</h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="nine" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>BROAD FRIENDSHIPS WITH MANY DIFFERENT PEOPLE, OR</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="nine" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>DEEP FRIENDSHIP WITH VERY FEW PEOPLE?</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q10.</h3>
+                            <h5 class="mt-1 ml-2">DO YOU ADMIRE MORE THE PEOPLE WHO ARE</h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="ten" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>NORMAL-ACTING TO NEVER MAKE THEMSELVES THE
+                            CENTER OF ATTENTION, OR</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="ten" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>TOO ORIGINAL AND INDIVIDUAL TO CARE WHETHER THEY
+                            ARE THE CENTER OF ATTENTION OR NOT</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q11.</h3>
+                            <h5 class="mt-1 ml-2">DO YOU PREFER TO</h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="eleven" value="A" autocomplete="off"> <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>ARRANGE PICNICS, PARTIES ETC, WELL IN ADVANCE, OR</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="eleven" value="B" autocomplete="off"> <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>BE FREE TO DO WHATEVER TO LOOKS LIKE FUN WHEN
+                            THE TIME COMES?</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q12.</h3>
+                            <h5 class="mt-1 ml-2">DO YOU USUALLY GET ALONG BETTER WITH</h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="twelve" value="A" autocomplete="off"> <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>REALISTIC PEOPLE, OR</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="twelve" value="B" autocomplete="off"> <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>IMAGINATIVE PEOPLE?</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q13.</h3>
+                            <h5 class="mt-1 ml-2">WHEN YOU ARE WITH THE GROUP OF PEOPLE, WOULD YOU USUALLY
+                                RATHER</h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="thirteen" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>JOIN IN THE TALK OF THE GROUP OR</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="thirteen" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>STAND BACK AND LISTEN FIRST?</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q14.</h3>
+                            <h5 class="mt-1 ml-2">IS IT A HIGHER COMPLIMENT TO BE CALLED</h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="fourteen" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>A PERSON OF REAL FEELING, OR</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="fourteen" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>A CONSISTENTLY REASONABLE PERSON?</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q15.</h3>
+                            <h5 class="mt-1 ml-2">IN READING FOR PLEASURE, DO YOU</h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="fifteen" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>ENJOY ODD OR ORIGINAL WAYS OF SAYING THINGS, OR</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="fifteen" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>LIKE WRITERS TO SAY EXACTLY WHAT THEY MEAN?</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q16.</h3>
+                            <h5 class="mt-1 ml-2">DO YOU</h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="sixteen" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>TALK EASILY TO ALMOST ANYONE FOR AS LONG AS YOU
+                            HAVE TO, OR</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="sixteen" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>FIND A LOT TO SAY ONLY TO CERTAIN PEOPLE OR UNDER
+                            CERTAIN CONDITIONS?</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q17.</h3>
+                            <h5 class="mt-1 ml-2">DOES FOLLOWING A SCHEDULE</h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="seventeen" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>APPEAL TO YOU, OR</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="seventeen" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>CRAMP YOU?</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q18.</h3>
+                            <h5 class="mt-1 ml-2">WHEN IT IS SETTLED WELL IN ADVANCE THAT YOU WILL DO A
+                                CERTAIN THING AT A CERTAIN TIME,DO YOU FIND IT</h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="eighteen" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>NICE TO BE ABLE TO PLAN ACCORDINGLY, OR</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="eighteen" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>A LITTLE UNPLEASANT TO BE TIED DOWN?</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q19.</h3>
+                            <h5 class="mt-1 ml-2">ARE YOU MORE SUCCESSFUL</h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="nineteen" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>AT FOLLOWING A CAREFULLY WORKED OUT PLAN, OR</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="nineteen" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>AT DEALING WITH THE UNEXPECTED AND SEEING
+                            QUICKLY WHAT SHOULD BE DONE?</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q20.</h3>
+                            <h5 class="mt-1 ml-2">WOULD YOU RATHER BE CONSIDERED</h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="twenty" value="A" autocomplete="off"> <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>A PRACTICAL PERSON, OR</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="twenty" value="B" autocomplete="off"> <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>AN OUT-OF-THE-BOX-THINKING PERSON?</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q21.</h3>
+                            <h5 class="mt-1 ml-2">IN A LARGE GROUP, DO YOU MORE OFTEN</h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="twentyone" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>INTRODUCE OTHERS, OR</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="twentyone" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>GET INTRODUCED?</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q22.</h3>
+                            <h5 class="mt-1 ml-2">DO YOU USUALLY</h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="twentytwo" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>VALUE EMOTION MORE THAN LOGIC, OR</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="twentytwo" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>VALUE LOGIC MORE THAN FEELINGS?</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q23.</h3>
+                            <h5 class="mt-1 ml-2">WOULD YOU RATHER HAVE AS A FRIEND</h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="twentythree" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>SOMEONE WHO IS ALWAYS COMING UP WITH NEW
+                            IDEAS, OR</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="twentythree" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>SOMEONE WHO HAS BOTH FEET ON THE GROUND?</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q24.</h3>
+                            <h5 class="mt-1 ml-2">CAN THE NEW PEOPLE YOU MEET TELL WHAT YOU ARE INTERESTED
+                                IN</h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="twentyfour" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>RIGHT AWAY,</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="twentyfour" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>ONLY AFTER THEY REALLY GET TO KNOW YOU?</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q25.</h3>
+                            <h5 class="mt-1 ml-2">IN YOUR DAILY WORK, DO YOU</h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="twentyfive" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>USUALLY PLAN YOUR WORK SO YOU WON’T NEED TO
+                            WORK UNDER PRESSURE, OR</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="twentyfive" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>RATHER ENJOY AN EMERGENCY THAT MAKES YOU WORK
+                            AGAINST TIME, OR</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="twentyfive" value="C" autocomplete="off">
+                                <span>C</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>HATE TO WORK UNDER PRESSURE?</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q26.</h3>
+                            <h5 class="mt-1 ml-2">DO YOU USUALLY</h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="twentysix" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>SHOW YOUR FEELINGS FREELY, OR</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="twentysix" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>KEEP YOUR FEELINGS TO YOURSELF?</h6></p>
+                        </div>
+                    </div>
+
+                    <div class="question bg-white p-3 border-bottom">
+                        <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                            <h4 class="mx-auto">Part 2: Which word in each pair appeals to you more?</h4>
+                        </div>
+                    </div>
+
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q27.</h3>
+
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="twentyseven" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>SCHEDULED</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="twentyseven" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>UNPLANNED</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q28.</h3>
+                            <h5 class="mt-1 ml-2"></h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="twentyeight" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>FACTS</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="twentyeight" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>IDEAS</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q29.</h3>
+                            <h5 class="mt-1 ml-2"></h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="twentynine" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>QUIET</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="twentynine" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>HEARTY</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q30.</h3>
+                            <h5 class="mt-1 ml-2"></h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="thirty" value="A" autocomplete="off"> <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>CONVINCING</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="thirty" value="B" autocomplete="off"> <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>TOUCHING</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q31.</h3>
+                            <h5 class="mt-1 ml-2"></h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="thirtyone" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>IMAGINATIVE</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="thirtyone" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>MATTER-OF-FACT</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q32.</h3>
+                            <h5 class="mt-1 ml-2"></h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="thirtytwo" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>BENEFITS</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="thirtytwo" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>BLESSINGS</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q33.</h3>
+                            <h5 class="mt-1 ml-2"></h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="thirtythree" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>PEACEMAKER</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="thirtythree" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>JUDGE</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q34.</h3>
+                            <h5 class="mt-1 ml-2"></h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="thirtyfour" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>SYSTEMATIC</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="thirtyfour" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>SPONTANEOUS</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q35.</h3>
+                            <h5 class="mt-1 ml-2"></h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="thirtyfive" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>STATEMENT</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="thirtyfive" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>CONCEPT</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q36.</h3>
+                            <h5 class="mt-1 ml-2"></h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="thirtysix" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>RESERVED</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="thirtysix" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>TALAKATIVE</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q37.</h3>
+                            <h5 class="mt-1 ml-2"></h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="thirtyseven" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>ANALYZE</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="thirtyseven" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>SYMPATHIZE</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q38.</h3>
+                            <h5 class="mt-1 ml-2"></h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="thirtyeight" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>CREATE</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="thirtyeight" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>MAKE</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q39.</h3>
+                            <h5 class="mt-1 ml-2"></h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="thirtynine" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>DETERMINED</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="thirtynine" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>DEVOTED</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q40.</h3>
+                            <h5 class="mt-1 ml-2"></h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="forty" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>GENTLE</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="forty" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>FIRM</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q41.</h3>
+                            <h5 class="mt-1 ml-2"></h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="fortyone" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>SYSTEMATIC</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="fortyone" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>CASUAL</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q42.</h3>
+                            <h5 class="mt-1 ml-2"></h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="fourttwo" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>CERTAINTY</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="fourttwo" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>THEORY</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q43.</h3>
+                            <h5 class="mt-1 ml-2"></h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="fortythree" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>CALM</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="fortythree" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>LIVELY</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q44.</h3>
+                            <h5 class="mt-1 ml-2"></h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="fortyfour" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>JUSTICE</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="fortyfour" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>MERCY</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q45.</h3>
+                            <h5 class="mt-1 ml-2"></h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="fortyfive" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>FASCINATING</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="fortyfive" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>SENSIBLE</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q46.</h3>
+                            <h5 class="mt-1 ml-2"></h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="fortysix" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>FIRM-MINDED</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="fortysix" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>WARM HEARTED</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q47.</h3>
+                            <h5 class="mt-1 ml-2"></h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="fortyseven" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>FEELING</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="fortyseven" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>THINKING</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q48.</h3>
+                            <h5 class="mt-1 ml-2"></h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="fortyeight" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>LITERAL</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="fortyeight" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>FIGURATIVE</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q49.</h3>
+                            <h5 class="mt-1 ml-2"></h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="fortynine" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>ANTICIPATION</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="fortynine" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>COMPASSION</h6></p>
+                        </div>
+                    </div>
+                    <div class="question bg-light p-3 border-bottom">
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <h3 class="text-danger">Q50.</h3>
+                            <h5 class="mt-1 ml-2"></h5>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="fifty" value="A" autocomplete="off">
+                                <span>A</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>HARD</h6></p>
+                        </div>
+                        <div class="d-flex flex-row align-items-center question-title">
+                            <label class="radio"> <input type="radio" name="fifty" value="B" autocomplete="off">
+                                <span>B</span>
+                            </label>
+                            <p class="mt-1 ml-2"><h6>SOFT</h6></p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white">
+                        <button id="finish_test"
+                                class="btn btn-primary border-success align-items-center btn-success mx-auto"
+                                style="width: 1000px;" type="button">Finish Test<i class="fa fa-angle-right ml-2"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img class="image" src="Resim/green 2.png" alt="">
+                <img class="image" src="Resim/yellow 3.png" alt="">
+                <img class="image" src="Resim/purple 9.png" alt="">
+                <img class="image" src="Resim/blue 5.png" alt="">
+                <img class="image" src="Resim/purple 7.png" alt="">
+                <img class="image" src="Resim/blue 6.png" alt="">
+                <img class="image" src="Resim/purple 10.png" alt="">
+                <img class="image" src="Resim/yellow 4.png" alt="">
+                <img class="image" src="Resim/green 5.png" alt="">
+                <img class="image" src="Resim/yellow 6.png" alt="">
+                <img class="image" src="Resim/purple 8.png" alt="">
+                <img class="image" src="Resim/green 8.png" alt="">
+                <img class="image" src="Resim/yellow 8.png" alt="">
+                <img class="image" src="Resim/yellow 10.png" alt="">
+                <img class="image" src="Resim/green 6.png" alt="">
+                <img class="image" src="Resim/yellow 7.png" alt="">
+            </div>
+
+        </div>
+    </div>
+
+</form>
+
+<div id="resultDiv" class="d-none">
+    
+        
+    
+
+    <section id="about">
+        <div class="col-md-12">
+        
+        </div>
+        
+        
+        <div id="about-text" class="clearfix">
+            <h2 class="text-uppercase">YOUR PERSONALITY TYPE</h2>
+        <h2 id="resultName"></h2>
+        <h3 id="fullResult"></h3>
+        <img id="resultImage" src="#" height="400px" width="400px">
+        <p id="resultText" style="font-size: 30px;"></p>
+
+            <hr>
+
+            <div class="left">
+                <p class="text">
+                    <h4>Mind</h4>
+                    <p style="font-size: 20px;"> Introverted (I) – prefer solitary activities, think before speaking, get
+                    exhausted by social interaction.</p>
+                    <p style="font-size: 20px;">Extraverted (E) – prefer group activities, think while speaking, get energized
+                    by social interaction.</p>
+                    <h4>Energy</h4>
+                    <p style="font-size: 20px;">Intuitive (N) – imaginative, rely on their intuition, absorbed in ideas, focus
+                    on what might happen.</p>
+                    <p style="font-size: 20px;">Sensing (S) – down-to-earth, rely on their senses, absorbed in practical
+                    matters, focus on what has happened.</p>
+                    <h4>Nature</h4>
+                    <p style="font-size: 20px;">Thinking (T) - tough, follow their minds, focus on objectivity and rationality.</p>
+                    <p style="font-size: 20px;">Feeling (F) – sensitive, follow their hearts, focus on harmony and
+                    cooperation.</p>
+                    <h4>Tactics</h4>
+                    <p style="font-size: 20px;">Judging (J) – decisive, prefer clear rules and guidelines, see deadlines as
+                    sacred, seek closure.</p>
+                    <p style="font-size: 20px;">Perceiving (P) – very good at improvising, prefer keeping their options open,
+                    relaxed about their work, seek freedom.</p>    
+                </p>
+            </div>
+           
+            
+            <h3 class="text-uppercase mt-3" style="font-size: 30px;"> <a href="test.html" style="text-decoration: none;" class="btn-new">Restart The Test</a></h3>
+            
+        
+        </div>
+        
+        
+        
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossOrigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossOrigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossOrigin="anonymous"></script>
+
+
+<script>
+    $(document).ready(function () {
+        $('#finish_test').prop('disabled', true);
+        inspectAllInputFields();
+    });
+
+    $('input[type=radio]').change(function () {
+        $('#finish_test').prop('disabled', false);
+        inspectAllInputFields();
+    });
+
+    function inspectAllInputFields() {
+        var count = 0;
+        $('#finish_test').prop('disabled', false);
+        $('.row').each(function (i) {
+            count = $(this).find('input[type=radio]:checked').length;
+            if (count == 50) {
+                $('#finish_test').prop('disabled', false);
+            } else {
+                $('#finish_test').prop('disabled', true);
+            }
+        });
+    }
+
+    $('#finish_test').click(function () {
+
+        $('#resultDiv').removeClass('d-none');
+
+        var e = 0;
+        var i = 0;
+        var s = 0;
+        var n = 0;
+        var t = 0;
+        var f = 0;
+        var j = 0;
+        var p = 0;
+
+
+        var results = {
+            'one': $('input[name=one]:checked').val(),
+            'two': $('input[name=two]:checked').val(),
+            'three': $('input[name=three]:checked').val(),
+            'four': $('input[name=four]:checked').val(),
+            'five': $('input[name=five]:checked').val(),
+            'six': $('input[name=six]:checked').val(),
+            'seven': $('input[name=seven]:checked').val(),
+            'eight': $('input[name=eight]:checked').val(),
+            'nine': $('input[name=nine]:checked').val(),
+            'ten': $('input[name=ten]:checked').val(),
+            'eleven': $('input[name=eleven]:checked').val(),
+            'twelve': $('input[name=twelve]:checked').val(),
+            'thirteen': $('input[name=thirteen]:checked').val(),
+            'fourteen': $('input[name=fourteen]:checked').val(),
+            'fifteen': $('input[name=fifteen]:checked').val(),
+            'sixteen': $('input[name=sixteen]:checked').val(),
+            'seventeen': $('input[name=seventeen]:checked').val(),
+            'eighteen': $('input[name=eighteen]:checked').val(),
+            'nineteen': $('input[name=nineteen]:checked').val(),
+            'twenty': $('input[name=twenty]:checked').val(),
+            'twentyone': $('input[name=twentyone]:checked').val(),
+            'twentytwo': $('input[name=twentytwo]:checked').val(),
+            'twentythree': $('input[name=twentythree]:checked').val(),
+            'twentyfour': $('input[name=twentyfour]:checked').val(),
+            'twentyfive': $('input[name=twentyfive]:checked').val(),
+            'twentysix': $('input[name=twentysix]:checked').val(),
+            'twentyseven': $('input[name=twentyseven]:checked').val(),
+            'twentyeight': $('input[name=twentyeight]:checked').val(),
+            'twentynine': $('input[name=twentynine]:checked').val(),
+            'thirty': $('input[name=thirty]:checked').val(),
+            'thirtyone': $('input[name=thirtyone]:checked').val(),
+            'thirtyonetwo': $('input[name=thirtyonetwo]:checked').val(),
+            'thirtythree': $('input[name=thirtythree]:checked').val(),
+            'thirtyfour': $('input[name=thirtyfour]:checked').val(),
+            'thirtyfive': $('input[name=thirtyfive]:checked').val(),
+            'thirtysix': $('input[name=thirtysix]:checked').val(),
+            'thirtyseven': $('input[name=thirtyseven]:checked').val(),
+            'thirtyeight': $('input[name=thirtyeight]:checked').val(),
+            'thirtynine': $('input[name=thirtynine]:checked').val(),
+            'forty': $('input[name=forty]:checked').val(),
+            'fortyone': $('input[name=fortyone]:checked').val(),
+            'fortytwo': $('input[name=fortytwo]:checked').val(),
+            'fortythree': $('input[name=fortythree]:checked').val(),
+            'fortyfour': $('input[name=fortyfour]:checked').val(),
+            'fortyfive': $('input[name=fortyfive]:checked').val(),
+            'fortysix': $('input[name=fortysix]:checked').val(),
+            'fortyseven': $('input[name=fortyseven]:checked').val(),
+            'fortyeight': $('input[name=fortyeight]:checked').val(),
+            'fortynine': $('input[name=fortynine]:checked').val(),
+            'fifty': $('input[name=fifty]:checked').val()
+        }
+
+        if (results['one'] == 'A') {
+            j = j + 2;
+        } else {
+            p = p + 2;
+        }
+
+        if (results['two'] == 'A') {
+            s = s + 2;
+        } else {
+            n = n + 2;
+        }
+
+        if (results['three'] == 'A') {
+            j = j + 2;
+        } else {
+            p = p + 2;
+        }
+
+        if (results['four'] == 'A') {
+            f = f + 1;
+        } else {
+            t = t + 2;
+        }
+
+        if (results['five'] == 'A') {
+            s = s + 1;
+        } else {
+            n = n + 1;
+        }
+
+        if (results['six'] == 'A') {
+            e = e + 2;
+        } else {
+            i = i + 2;
+        }
+
+        if (results['seven'] == 'A') {
+            j = j + 1;
+        } else if (results['seven'] == 'B') {
+            p = p + 1;
+        } else {
+            p = p + 1;
+        }
+
+        if (results['eight'] == 'A') {
+            j = j + 1;
+        } else {
+            p = p + 2;
+        }
+
+        if (results['nine'] == 'A') {
+            e = e + 2;
+        } else {
+            i = i + 1;
+        }
+
+        if (results['ten'] == 'A') {
+            s = s + 1;
+        } else {
+            n = n + 2;
+        }
+
+        if (results['eleven'] == 'A') {
+            j = j + 2;
+        } else {
+            p = p + 1;
+        }
+
+        if (results['twelve'] == 'A') {
+            s = s + 1;
+        } else {
+            n = n + 2;
+        }
+
+        if (results['thirteen'] == 'A') {
+            e = e + 1;
+        } else {
+            i = i + 2;
+        }
+
+        if (results['fourteen'] == 'A') {
+            j = j + 1;
+        } else {
+            p = p + 2;
+        }
+
+        if (results['fifteen'] == 'A') {
+            f = f + 1;
+        } else {
+            t = t + 2;
+        }
+
+        if (results['sixteen'] == 'A') {
+            e = e + 2;
+        } else {
+            i = i + 2;
+        }
+
+        if (results['seventeen'] == 'A') {
+            j = j + 2;
+        } else {
+            p = p + 2;
+        }
+
+        if (results['eighteen'] == 'A') {
+            j = j + 1;
+        } else {
+            p = p + 1;
+        }
+
+        if (results['nineteen'] == 'A') {
+            j = j + 1;
+        } else {
+            p = p + 1;
+        }
+
+        if (results['twenty'] == 'A') {
+            s = s + 2;
+        } else {
+            n = n + 2;
+        }
+
+        if (results['twentyone'] == 'A') {
+            e = e + 2;
+        } else {
+            i = i + 2;
+        }
+
+        if (results['twentytwo'] == 'A') {
+            f = f + 2;
+        } else {
+            t = t + 2;
+        }
+
+        if (results['twentythree'] == 'A') {
+            n = n + 1;
+        } else {
+            s = s + 2;
+        }
+
+        if (results['twentyfour'] == 'A') {
+            e = e + 1;
+        } else {
+            i = i + 1;
+        }
+
+        if (results['twentyfive'] == 'A') {
+            j = j + 1;
+        } else if (results['twentyfive'] == 'B') {
+            p = p + 1;
+        } else {
+            j = j;
+        }
+
+        if (results['twentysix'] == 'A') {
+            e = e + 1;
+        } else {
+            i = i;
+        }
+
+        if (results['twentyseven'] == 'A') {
+            j = j + 2;
+        } else {
+            p = p + 2;
+        }
+
+        if (results['twentyeight'] == 'A') {
+            s = s + 2;
+        } else {
+            n = n + 1;
+        }
+
+        if (results['twentynine'] == 'A') {
+            i = i + 2;
+        } else {
+            e = e + 2;
+        }
+
+        if (results['thirty'] == 'A') {
+            t = t + 2;
+        } else {
+            f = f + 1;
+        }
+
+        if (results['thirtyone'] == 'A') {
+            s = s;
+        } else {
+            n = n + 2;
+        }
+
+        if (results['thirtytwo'] == 'A') {
+            t = t + 1;
+        } else {
+            f = f + 1;
+        }
+
+        if (results['thirtythree'] == 'A') {
+            f = f + 0;
+        } else {
+            t = t + 2;
+        }
+
+        if (results['thirtyfour'] == 'A') {
+            t = t + 2;
+        } else {
+            f = f + 1;
+        }
+
+        if (results['thirtyfive'] == 'A') {
+            s = s + 2;
+        } else {
+            n = n + 1;
+        }
+
+        if (results['thirtysix'] == 'A') {
+            i = i + 1;
+        } else {
+            e = e + 2;
+        }
+
+        if (results['thirtyseven'] == 'A') {
+            t = t + 1;
+        } else {
+            f = f + 2;
+        }
+
+        if (results['thirtyeight'] == 'A') {
+            n = n;
+        } else {
+            s = s + 2;
+        }
+
+        if (results['thirtynine'] == 'A') {
+            t = t + 1;
+        } else {
+            f = f + 1;
+        }
+
+        if (results['forty'] == 'A') {
+            f = f + 1;
+        } else {
+            t = t + 2;
+        }
+
+        if (results['fortyone'] == 'A') {
+            j = j + 2;
+        } else {
+            p = p + 2;
+        }
+
+        if (results['fortytwo'] == 'A') {
+            s = s + 1;
+        } else {
+            n = n + 2;
+        }
+
+        if (results['fortythree'] == 'A') {
+            i = i + 1;
+        } else {
+            e = e + 1;
+        }
+
+        if (results['fortyfour'] == 'A') {
+            t = t + 1;
+        } else {
+            f = f + 2;
+        }
+
+        if (results['fortyfive'] == 'A') {
+            n = n;
+        } else {
+            s = s + 2;
+        }
+
+        if (results['fortysix'] == 'A') {
+            t = t + 2;
+        } else {
+            f = f;
+        }
+
+        if (results['fortyseven'] == 'A') {
+            f = f + 1;
+        } else {
+            t = t + 2;
+        }
+
+        if (results['fortyeight'] == 'A') {
+            s = s + 1;
+        } else {
+            n = n + 1;
+        }
+
+        if (results['fortynine'] == 'A') {
+            t = t + 2;
+        } else {
+            f = f + 1;
+        }
+
+        if (results['fifty'] == 'A') {
+            t = t + 2;
+        } else {
+            f = f;
+        }
+
+        
+        if (e < i){
+
+            var eiResult = 'I';
+        }else {
+            var eiResult = 'E';
+        }
+
+        if (s > n){
+
+            var snResult = 'S';
+        }else {
+            var snResult = 'N';
+        }
+
+        
+        if (t < f){
+
+            var tfResult = 'F';
+        }else if (t > f) {
+            var tfResult = 'T';
+        }
+
+        if (j < p){
+
+            var jpResult = 'P';
+        }else {
+
+            var jpResult = 'J';
+        }
+
+        $('#fullResult').text("("+ eiResult + snResult + tfResult + jpResult+")");
+
+
+        if($('#fullResult').text() == '(INTJ)') {
+            $('#resultName').text('ARCHITECT');
+            $('#resultImage').attr('src','Resim/purple 11.png');
+            $('#resultText').text('Imaginative and strategic thinkers, with a plan for everything.');
+        }
+        else if($('#fullResult').text() == '(INTP)'){
+            $('#resultName').text('LOGICIAN');
+            $('#resultImage').attr('src','Resim/purple 3.png');
+            $('#resultText').text('Innovative inventors with an unquenchable thirst for knowledge.');
+        }
+        else if($('#fullResult').text() == '(ENTJ)'){
+            $('#resultName').text('COMMANDER');
+            $('#resultImage').attr('src','Resim/purple 5.png');
+            $('#resultText').text('Bold, imaginative and strong-willed leaders, always finding a way or making one.');
+        }
+        else if($('#fullResult').text() == '(ENTP)'){
+            $('#resultName').text('DEBATER');
+            $('#resultImage').attr('src','Resim/purple 4.png');
+            $('#resultText').text('Smart and curious thinkers who cannot resist an intellectual challenge.');
+        }
+
+
+        else if($('#fullResult').text() == '(INFJ)'){
+            $('#resultName').text('ADVOCATE');
+            $('#resultImage').attr('src','Resim/green 1.png');
+            $('#resultText').text('Quiet and mystical, yet very inspiring and tireless idealists.');
+        }
+
+        else if($('#fullResult').text() == '(INFP)'){
+            $('#resultName').text('MEDIATOR');
+            $('#resultImage').attr('src','Resim/green 5.png');
+            $('#resultText').text('Poetic, kind and altruistic people, always eager to help a good cause.');
+        }
+
+        else if($('#fullResult').text() == '(ENFJ)'){
+            $('#resultName').text('PROTAGONIST');
+            $('#resultImage').attr('src','Resim/green 9.png');
+            $('#resultText').text('Charismatic and inspiring leaders, able to mesmerize their listeners.');
+        }
+
+        else if($('#fullResult').text() == '(ENFP)'){
+            $('#resultName').text('CAMPAIGNER');
+            $('#resultImage').attr('src','Resim/green 3.png');
+            $('#resultText').text('Enthusiastic, creative and sociable free spirits, who can always find a reason to smile.');
+        }
+
+
+        else if($('#fullResult').text() == '(ISTJ)'){
+            $('#resultName').text('LOGISTICIAN');
+            $('#resultImage').attr('src','Resim/blue 7.png');
+            $('#resultText').text('Practical and fact-minded individuals, whose reliability can not be doubted.');
+        }
+
+        else if($('#fullResult').text() == '(ISFJ)'){
+            $('#resultName').text('DEFENDER');
+            $('#resultImage').attr('src','Resim/blue 8.png');
+            $('#resultText').text('Very dedicated and warm protectors, always ready to defend their loved ones.');
+        }
+
+        else if($('#fullResult').text() == '(ESTJ)'){
+            $('#resultName').text('EXECUTIVE');
+            $('#resultImage').attr('src','Resim/blue 5.png');
+            $('#resultText').text('Excellent administrators, unsurpassed at managing things – or people.');
+        }
+
+        else if($('#fullResult').text() == '(ESFJ)'){
+            $('#resultName').text('CONSUL');
+            $('#resultImage').attr('src','Resim/blue 9.png');
+            $('#resultText').text('Extraordinarily caring, social and popular people, always eager to help.');
+        }
+
+
+        else if($('#fullResult').text() == '(ISTP)'){
+            $('#resultName').text('VIRTUOSO');
+            $('#resultImage').attr('src','Resim/yellow 3.png');
+            $('#resultText').text('Bold and practical experimenters, masters of all kinds of tools.');
+        }
+
+        else if($('#fullResult').text() == '(ISFP)'){
+            $('#resultName').text('ADVENTURER');
+            $('#resultImage').attr('src','Resim/yellow 10.png');
+            $('#resultText').text('Flexible and charming artists, always ready to explore and experience something new.');
+        }
+
+        else if($('#fullResult').text() == '(ESTP)'){
+            $('#resultName').text('ENTREPRENEUR');
+            $('#resultImage').attr('src','Resim/yellow 9.png');
+            $('#resultText').text('Smart, energetic and very perceptive people, who truly enjoy living on the edge.');
+        }
+
+        else if($('#fullResult').text() == '(ESFP)'){
+            $('#resultName').text('ENTERTAINER');
+            $('#resultImage').attr('src','Resim/yellow 6.png');
+            $('#resultText').text('Spontaneous, energetic and enthusiastic people – life is never boring around them.');
+        }
+    });
+</script>
+
+</body>
+
+</html>
